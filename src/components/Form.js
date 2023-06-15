@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import "../styles/global.css"
 
+//Add Employee
 function Form(){
     const [name, setName] = useState("");
     const [position, setPosition] = useState("");
