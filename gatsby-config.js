@@ -7,5 +7,9 @@ module.exports = {
     title: `learning-gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  // plugins: [],
+  // proxy: {
+  //     prefix: "/api",
+  //     url: "http://localhost:8080/api",
+  // },
 }

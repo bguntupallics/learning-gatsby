@@ -6,20 +6,20 @@ const TablePage = () => {
     const [data, setData] = useState([]);
 
     axios.get('http://localhost:8080/api/employees').then(response => {
+        console.log(response.data);
         setData(response.data);
     });
-
 
     return (
         <Layout>
             <div>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>ID</th>
-                        </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>ID</th>
+                    </tr>
                     </thead>
                     <tbody>
                     {
